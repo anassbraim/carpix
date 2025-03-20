@@ -2,15 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=dvice-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="avatar.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet"><title>Carpix</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Carpix</title>
     <style>
-        
-
-
         body {
             margin: 0;
             padding: 0;
@@ -29,30 +27,30 @@
             align-items: center;
             min-height: 100vh;
             background-color: rgba(0, 0, 0, 0.6);
-            padding: 20px;
+            padding: 2rem;
         }
 
         .logo {
-            width: 150px;
-            height: 150px;
+            width: 15vw;
+            height: 15vw;
+            max-width: 150px;
+            max-height: 150px;
             background: url('avatar.jpg') no-repeat center center;
             background-size: contain;
-            margin-bottom: 20px;
+            margin-bottom: 1rem;
             border-radius: 50%;
         }
 
         h1 {
-            font-size: 40px;
+            font-size: 2rem;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 1rem;
         }
 
         p.description {
-            font-size: 35px;
-            font-weight: normal;
-            margin-bottom: 20px;
-            margin-right: 350px;
+            font-size: 1.5rem;
             font-weight: 500;
+            margin-bottom: 1.5rem;
         }
 
         ul {
@@ -61,18 +59,15 @@
         }
 
         ul li {
-            font-size: 25px;
-            font-weight: 400;
+            font-size: 1.2rem;
             font-weight: normal;
-            margin: 5px 0;
-            text-align: left;
-            margin-right: 230px;
+            margin: 0.5rem 0;
         }
 
         .button {
             display: inline-block;
-            padding: 20px 40px;
-            font-size: 25px;
+            padding: 0.8rem 1.5rem;
+            font-size: 1.2rem;
             font-weight: bold;
             color: white;
             background-color: #ff6600;
@@ -88,9 +83,58 @@
         }
 
         .footer {
-            font-size: 17px;
+            font-size: 0.9rem;
             font-weight: 200;
-            margin-top: 30px;
+            margin-top: 2rem;
+        }
+
+        /* تصميم مستجيب */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            p.description {
+                font-size: 1.3rem;
+            }
+
+            ul li {
+                font-size: 1rem;
+            }
+
+            .button {
+                padding: 0.7rem 1.2rem;
+                font-size: 1rem;
+            }
+
+            .logo {
+                width: 20vw;
+                height: 20vw;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p.description {
+                font-size: 1.1rem;
+            }
+
+            ul li {
+                font-size: 0.9rem;
+            }
+
+            .button {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .logo {
+                width: 25vw;
+                height: 25vw;
+            }
         }
     </style>
 </head>
@@ -104,7 +148,7 @@
             <li>CINIMATIC DIT</li>
             <li>CINIMATIC SOMEDARK DIT</li>
         </ul>
-        <a href="Carpix_presetsFree.zip" download class="button" download="Carpix">Download</a>
+        <a href="Carpix_presetsFree.zip" download class="button">Download</a>
         
         <div class="footer">© 2025 Carpix. All rights reserved.</div>
     </div>
