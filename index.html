@@ -152,5 +152,48 @@
         
         <div class="footer">© 2025 Carpix. All rights reserved.</div>
     </div>
+
+<script>
+
+    // منع Ctrl + U
+document.addEventListener('keydown', function(e) {
+    if (e.ctrlKey && e.key === 'u') {
+        e.preventDefault();
+        alert('عرض مصدر الصفحة معطل!');
+    }
+});
+
+// منع زر النقر الأيمن
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    alert('النقر بزر الماوس الأيمن معطل!');
+});
+
+// منع F12 (أدوات المطور)
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'F12') {
+        e.preventDefault();
+        alert('أدوات المطور معطلة!');
+    }
+});
+
+// منع Ctrl + Shift + I
+document.addEventListener('keydown', function(e) {
+    if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+        e.preventDefault();
+        alert('أدوات المطور معطلة!');
+    }
+});
+
+// منع Ctrl + Shift + J
+document.addEventListener('keydown', function(e) {
+    if (e.ctrlKey && e.shiftKey && e.key === 'J') {
+        e.preventDefault();
+        alert('أدوات المطور معطلة!');
+    }
+});
+
+
+</script>
 </body>
 </html>
